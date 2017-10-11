@@ -11,7 +11,7 @@ commands:
   sethome:
     description: Sets your home Point
     usage: /sethome (<Name>)
-    permisson: Basics.home.home
+    permisson: basics.home.home
   home:
     description: Teleports you to your Home
     usage: /home (<Name>)

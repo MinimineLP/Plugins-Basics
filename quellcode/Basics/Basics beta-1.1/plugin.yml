@@ -1,0 +1,133 @@
+#Basics-Beta 1.1
+#On servers i am MinimineLP
+
+main: com.github.miniminelp.basics.core.Basics
+name: Basics
+version: ersion Beta-1.1
+author: Minimine
+prefix: Basics
+
+commands:
+  sethome:
+    description: Sets your home Point
+    usage: /sethome (<Name>)
+    permisson: basics.home.home
+  home:
+    description: Teleports you to your Home
+    usage: /home (<Name>)
+    permisson: basics.home.home
+  gop:
+    description: Gives Op
+    usage: /gop
+    permisson: basics.op
+  rop:
+    description: Removes Op
+    usage: /rop
+    permisson: basics.op
+  tpa:
+    description: Send a tp request
+    usage: /tpa <Player>
+    permisson: basics.tpa.tpa
+  tpaaccept:
+    description: Accepts tp requests
+    usage: /tpaaccept <Player>
+    permisson: basics.tpa.tpaaccept
+  setwarp:
+    description: Sets a Warp
+    usage: /setwarp name
+    permisson: basics.warp.admin
+  delwarp:
+    description: Delets a Warp
+    usage: /delwarp name
+    permisson: basics.warp.admin
+  warp:
+    description: Sets a Warp
+    usage: /warp (name)
+    permisson: basics.warp.warp
+  warps:
+    description: Sets a Warp
+    usage: /warps (name)
+    permisson: basics.warp.warp
+  heal:
+    description: Heals the Player
+    usage: /heal (player)
+    permisson: basics.heal.self
+  feed:
+    description: Heals the Player
+    usage: /feed (player)
+    permisson: basics.feed.self
+  ban:
+    description: bans a Player
+    usage: /ban <player> (Reason)
+    permisson: basics.ban.ban
+  tempban:
+    description: temporarly bans a Player
+    usage: /tempban <player> <time> (Reason)
+    permisson: basics.ban.tempban
+#  ip-ban:
+#    description: ip-bans a Player
+#    usage: /ip-ban <player> (Reason)
+#    permisson: basics.ban.ipban
+#  ipban:
+#    description: ip-bans a Player
+#    usage: /ipban <player> (Reason)
+#    permisson: basics.ban.ipban
+  unban:
+    description: unbans a Player
+    usage: /unban <player>
+    permisson: basics.ban.unban
+  pardon:
+    description: unbans a Player
+    usage: /pardon <player>
+    permisson: basics.ban.unban
+  ip:
+    description: returns the ip of an Player
+    usage: /ip <player>
+    permisson: basics.ip
+  mute:
+    description: mutes a Player
+    usage: /mute <player> (Reason)
+    permisson: basics.ban.mute
+  tempmute:
+    description: tempurarely mutes a Player
+    usage: /tempmute <player> <time> (Reason)
+    permisson: basics.ban.tempmute
+  unmute:
+    description: Unmutes a Player
+    usage: /unmute <player>
+    permisson: basics.ban.unmute
+  muteinfo:
+    description: shows a player his (others) mute info
+    usage: /muteinfo (player)
+  mute-info:
+    description: shows a player his (others) mute info
+    usage: /mute-info (player)
+  basics:
+    description: shows informations about basics
+    usage: /basics (reload)
+  gm:
+    description: Switches gamemodes
+    usage: /gm <mode> (<player>)
+    permisson: basics.gamemode
+  monitor:
+    description: Let you know all chat activitys from other users!
+    usage: /monitor
+    permisson: basics.monitor
+  sudo:
+    description: Let other Player do things
+    usage: /sudo <Player> <command/chat>
+    permisson: basics.sudo
+  permission:
+     description: This Command is made for managing the Server Permissions
+     usage: |
+            Usage
+            /permission - Shows infos about permission system
+            /permission reload - Reloads the permission system
+            /permission rl - Reloads the permission system
+            /permission user <user> add <permission> - adds a permission to a user
+            /permission user <user> remove <permission> - removes a permission from a user
+            /permission user <user> group set <permission> - sets the users group
+            /permission user <user> group add <permission> - adds the users to a group (So the user can be in more than one Group)
+            /permission user <user> group remove <permission> - removes the users from a group (So when the user is in no Group, he will get the standart group)
+            /permission group add - Gives a Group a permission
+            /permission group remove - Removes a permission from a grup
