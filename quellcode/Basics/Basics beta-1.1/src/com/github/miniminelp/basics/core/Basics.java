@@ -64,7 +64,8 @@ public class Basics extends JavaPlugin{
 		if(label.equalsIgnoreCase("basics")){
 			if(args.length>0){
 				if(args[0].equalsIgnoreCase("reload")||args[0].equalsIgnoreCase("rl")){
-					reload();
+					if(sender.hasPermission("basics.admin"))reload();
+					else sender.sendMessage(Formatting.COLOR.RED+"No Permission");
 				}
 			}else sender.sendMessage("This Server uses "+getName());
 		}
