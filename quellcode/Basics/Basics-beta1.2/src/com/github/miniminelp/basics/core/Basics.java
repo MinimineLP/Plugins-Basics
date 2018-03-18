@@ -90,7 +90,6 @@ public class Basics extends JavaPlugin{
 		if(!config.contains("Basics.Modulmanager.sudo"))config.set("Basics.Modulmanager.sudo", true);
 		if(!config.contains("Basics.Modulmanager.vanish"))config.set("Basics.Modulmanager.vanish", true);
 		if(!config.contains("Basics.Modulmanager.fly"))config.set("Basics.Modulmanager.fly", true);
-		if(!config.contains("Basics.Modulmanager.LobbySystem"))config.set("Basics.Modulmanager.LobbySystem", true);
 		
 		if(!config.contains("Basics.Modulmanager.Changelog"))config.set("Basics.Modulmanager.Changelog", true);
 		
